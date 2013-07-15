@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings">
+    </item> -->
+    <group android:id="@+id/group1" android:menuCategory="container" android:enabled="true" android:visible="true">
+        <item android:id="@+id/width" android:alphabeticShortcut="W" android:title="Width" android:menuCategory="system" ></item>
+        <item android:id="@+id/colours" android:alphabeticShortcut="C" android:title="Colours" android:menuCategory="system">
+            <menu>
+                <item android:id="@+id/black" android:title="Black"/>
+                <item android:id="@+id/red" android:title="Red"/>
+                <item android:id="@+id/blue" android:title="Blue"/>
+                <item android:id="@+id/green" android:title="Green"/>
+                
+            </menu>
+        </item>
+        <item android:id="@+id/undo" android:alphabeticShortcut="U" android:title="Undo" android:menuCategory="system"></item>
+        <item android:id="@+id/redo" android:alphabeticShortcut="R" android:title="Redo" android:menuCategory="system"></item>
+        <item android:id="@+id/eraser" android:alphabeticShortcut="E" android:title="Eraser" android:menuCategory="system"></item>
+        <item android:id="@+id/clear" android:alphabeticShortcut="C" android:title="Clear" android:menuCategory="system"></item>
+    </group>
+    
+	
+</menu>

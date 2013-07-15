@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Class</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_chat">Discussion</string>
+    <string name="title_activity_board">Board</string>
+
+    <string-array name="widtharr">
+        <item>16</item>
+        <item>14</item>
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+        <item>6</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="title_activity_preference">Preferences</string>
+    <string name="pref_user_name">Nickname</string>
+    <string name="pref_user_name_summary">Set your display name</string>
+    <string name="title_activity_ba2">Student Board</string>
+    <string name="title_activity_pm">Students list</string>
+    <string name="title_activity_file_chooser">FileChooser</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_teacher_list">Teachers List</string>
+    <string name="title_activity_file_menu">FileMenu</string>
+    <string name="title_activity_received_files">ReceivedFiles</string>
+    <string name="title_activity_help">Help</string>
+
+</resources>

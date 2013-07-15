@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="UserProfile" >
+        <EditTextPreference
+                android:title="@string/pref_user_name"
+                android:summary="@string/pref_user_name_summary"
+                android:key="prefUsername"
+                android:maxLength="8" 
+    		android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890">
+     	</EditTextPreference>
+    			
+     </PreferenceCategory>
+     
+
+    <PreferenceCategory android:title="Feedback" 
+         android:key="contactDevKey"
+        
+        android:summary="Tell me all about your problems">
+    <Preference
+        android:key="contactDevKey"
+        android:title="Contact developer"
+        android:summary="Tell me all about your problems">
+    <intent
+  android:action="android.intent.action.VIEW"
+  android:data="mailto:rondroid1992@gmail.com?subject=FeedBack">
+  <extra android:name="android.intent.extra.TEXT" android:value="Type Feedback Here" />
+</intent>
+    </Preference>
+    </PreferenceCategory>
+      
+        
+</PreferenceScreen>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.aakashlabs.smartclass"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.aakashlabs.smartclass.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.BoardActivity"
+            android:label="@string/title_activity_board"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <service android:name="org.aakashlabs.smartclass.UDPService" />
+
+        <activity
+            android:name="org.aakashlabs.smartclass.Preferences"
+            android:label="@string/title_activity_preference" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.BA2"
+            android:label="@string/title_activity_ba2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.PMActivity"
+            android:label="@string/title_activity_pm" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.FileChooser"
+            android:label="@string/title_activity_file_chooser" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.DialogActivity"
+            android:label="@string/title_activity_dialog"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.TeacherListActivity"
+            android:label="@string/title_activity_teacher_list" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.FileMenu"
+            android:label="@string/title_activity_file_menu" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.ReceivedFiles"
+            android:label="@string/title_activity_received_files" >
+        </activity>
+        <activity
+            android:name="org.aakashlabs.smartclass.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+</manifest>
